@@ -1,0 +1,84 @@
+[
+  {
+    "name": "LIONGLOBAL SGD ENHANCED LIQUIDITY A ACC SGD",
+    "type": "Fixed Income",
+    "description": "Low-risk fund with high liquidity, suitable for short-term parking of funds. Managed by Lion Global Investors.",
+    "aum": "1.43B",
+    "sharpe_ratio": 0.66,
+    "risk_rating": 1
+  },
+  {
+    "name": "HGIF GLOBAL INVESTMENT GRADE SECURITISED CREDIT BOND AM3H SGD",
+    "type": "Fixed Income",
+    "description": "Invests in high-quality securitised credit assets globally. Managed by HSBC with moderate risk.",
+    "aum": "3.77B",
+    "sharpe_ratio": 0.28,
+    "risk_rating": 2
+  },
+  {
+    "name": "ALLIANZ GLOBAL FLOATING RATE NOTES PLUS CL AMG DIS H2-SGD",
+    "type": "Fixed Income",
+    "description": "Floating rate note fund with higher Sharpe ratio, ideal for managing interest rate risk.",
+    "aum": "773.66M",
+    "sharpe_ratio": 0.92,
+    "risk_rating": 3
+  },
+  {
+    "name": "FIDELITY GLOBAL DIVIDEND A-MINCOME(G)-SGD-H",
+    "type": "Equity",
+    "description": "Global dividend-focused fund offering regular income and moderate growth.",
+    "aum": "13.87B",
+    "sharpe_ratio": 0.56,
+    "risk_rating": 7
+  },
+  {
+    "name": "AB SICAV I AMERICAN GROWTH A SGD",
+    "type": "Equity",
+    "description": "Focused on U.S. growth equities. Managed by AllianceBernstein with moderate risk-adjusted return.",
+    "aum": "8.22B",
+    "sharpe_ratio": 0.28,
+    "risk_rating": 8
+  },
+  {
+    "name": "FSSA REGIONAL INDIA A ACC SGD",
+    "type": "Equity",
+    "description": "India-focused equity fund targeting regional growth opportunities.",
+    "aum": "258.40M",
+    "sharpe_ratio": 0.56,
+    "risk_rating": 9
+  },
+  {
+    "name": "FIDELITY GLOBAL TECHNOLOGY A-ACC SGD",
+    "type": "Equity",
+    "description": "Invests in global technology leaders, offering exposure to innovative sectors.",
+    "aum": "24.55B",
+    "sharpe_ratio": 0.40,
+    "risk_rating": 10
+  },
+  {
+    "name": "LIONGLOBAL ALL SEASONS FUND (STANDARD) CL ACC SGD",
+    "type": "Balanced",
+    "description": "Diversified balanced fund for all-weather investing. Conservative risk profile.",
+    "aum": "116.06M",
+    "sharpe_ratio": 0.14,
+    "risk_rating": 5
+  },
+  {
+    "name": "JANUS HENDERSON BALANCED A ACC SGD",
+    "type": "Balanced",
+    "description": "Blend of global equities and fixed income for moderate risk takers.",
+    "aum": "9.12B",
+    "sharpe_ratio": 0.04,
+    "risk_rating": 6
+  },
+  {
+    "name": "AB SICAV I EMERGING MARKETS MULTI-ASSET PORTFOLIO AD SGD-H",
+    "type": "Alternative Investments",
+    "description": "Multi-asset exposure in emerging markets. Offers diversification beyond traditional asset classes.",
+    "aum": "622.57M",
+    "sharpe_ratio": 0.01,
+    "risk_rating": 6
+  }
+]
+
+  

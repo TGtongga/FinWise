@@ -1,0 +1,128 @@
+[
+  {
+    "type": "Risk & Return Preference",
+    "question": "Which statement best describes your investment approach?",
+    "choices_list": [
+      "a. \u201cI only invest if I have a guarantee of getting back at least my original investment.\u201d \u2013 I take minimal risk and accept lower returns",
+      "b. \u201cI\u2019m willing to take a small amount of risk to earn slightly more than bank deposit rates.\u201d \u2013 Conservative: minor risks for modest returns",
+      "c. \u201cI seek steady long-term growth and can handle some short-term fluctuations.\u201d \u2013 Moderate risk for balanced growth",
+      "d. \u201cI aim for strong long-term growth and understand this means larger short-term swings in value.\u201d \u2013 Growth-oriented: sizable risk for higher returns",
+      "e. \u201cI want to maximize returns and am very comfortable with high volatility and potential losses.\u201d \u2013 Highly aggressive in pursuit of returns"
+    ],
+    "risk_score_list": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "type": "Investment Time Horizon",
+    "question": "How long do you plan to invest these funds before you will need to withdraw a significant portion?",
+    "choices_list": [
+      "a. Short-term (under 3 years): I may need the money very soon",
+      "b. 2\u20135 years: I have a fairly short investment horizon",
+      "c. 6\u201310 years: Medium-term horizon",
+      "d. 11\u201320 years: Long-term, ample time to ride out ups and downs",
+      "e. Over 20 years: Very long-term; no need for funds in the foreseeable future"
+    ],
+    "risk_score_list": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "type": "Reaction to Market Volatility",
+    "question": "If your investment portfolio dropped 20% in value within a year, what would you most likely do? (Assume the decline is market-wide)",
+    "choices_list": [
+      "a. Sell all investments to prevent further losses \u2013 I cannot tolerate this loss",
+      "b. Sell a portion and shift to safer assets \u2013 I\u2019d reduce risk if losses continue",
+      "c. Hold the investments but feel very concerned \u2013 I\u2019d avoid selling immediately, though uneasy",
+      "d. Hold and stay the course confidently \u2013 I would not panic and stick to my long-term plan",
+      "e. Buy more at the lower prices \u2013 I see a downturn as an opportunity and can accept short-term loss"
+    ],
+    "risk_score_list": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "type": "Risk Trade-off Mindset",
+    "question": "Which statement best reflects your attitude toward the trade-off between potential returns and potential losses?",
+    "choices_list": [
+      "a. \u201cAvoiding loss is my top priority; I accept much lower returns to keep my money safe.\u201d",
+      "b. \u201cI\u2019m more concerned with losses than gains; I prefer to minimize risk even at the cost of some growth.\u201d",
+      "c. \u201cI balance my concern about losses and gains equally; a moderate risk/return trade-off is fine.\u201d",
+      "d. \u201cI\u2019m more focused on returns; I can tolerate some losses in pursuit of higher growth.\u201d",
+      "e. \u201cI prioritize maximizing returns; potential losses are of little concern to me.\u201d"
+    ],
+    "risk_score_list": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "type": "Maximum Loss Tolerance",
+    "question": "What is the largest decline in your portfolio\u2019s value you could comfortably tolerate in a single year?",
+    "choices_list": [
+      "a. Less than 5% loss \u2013 even a small drop would be uncomfortable",
+      "b. 5\u201310% loss \u2013 I could endure a modest decline",
+      "c. 10\u201315% loss \u2013 a moderate drop is acceptable for me",
+      "d. 15\u201325% loss \u2013 I\u2019m fairly comfortable with significant volatility",
+      "e. Over 25% loss \u2013 I can tolerate very large swings in value"
+    ],
+    "risk_score_list": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "type": "Preferred Investment Choice",
+    "question": "Which of the following investment portfolios would you feel most comfortable with for the majority of your money?",
+    "choices_list": [
+      "a. Very conservative: Mostly cash or guaranteed products (e.g. deposits, government bonds) \u2013 minimal risk/return",
+      "b. Conservative: Portfolio of primarily high-quality bonds and a small portion of stocks \u2013 low risk, low-medium returns",
+      "c. Balanced: Mixed portfolio (~50% stocks and 50% bonds) \u2013 moderate risk and returns",
+      "d. Growth: Portfolio mostly in stocks (e.g. 80% stocks/20% bonds) \u2013 higher risk, higher potential returns",
+      "e. Aggressive: Nearly all in stocks or risky assets (e.g. emerging markets) \u2013 maximum risk for maximum return"
+    ],
+    "risk_score_list": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "type": "Investment Experience/Comfort",
+    "question": "Which statement best describes the type of investments you currently hold or are most familiar with?",
+    "choices_list": [
+      "a. Very low-risk only: I stick to bank savings, fixed deposits, or guaranteed funds",
+      "b. Mostly conservative: I have invested in bonds or bond funds, but little in stocks",
+      "c. Balanced exposure: I hold a mix of stock and bond investments",
+      "d. Mostly stocks: I\u2019m comfortable investing in stocks, equity funds, or similar growth-oriented assets",
+      "e. High-risk instruments: I have experience with very volatile or speculative investments (e.g. small-cap stocks, commodities)"
+    ],
+    "risk_score_list": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  }
+]
