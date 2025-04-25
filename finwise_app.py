@@ -35,8 +35,7 @@ fund_info_dict = {item["name"]: item for item in fund_info}
 # Load fund data
 data_folder = "fund_data"
 fund_files = [f for f in os.listdir(data_folder) if f.endswith(".csv")]
-funds = [f.replace(".csv", "") for f in fund_files]
-funds = [f for f in funds if f in fund_info_dict]
+funds = [f for f in fund_info_dict.keys()]
 
 fund_data_dict = {}
 for fund in funds:
@@ -173,16 +172,18 @@ if username and all(a is not None for a in answers):
 
     selected_funds = funds[:10]
 
+    print(selected_funds)
+
     def optimized_weights(risk_level):
         """
         Optimize portfolio weights based on risk level.
         """
         if risk_level == "Conservative":
-            return [30.51, 0, 0, 0, 0, 0, 7.44, 0, 38.26, 23.79] # Optimized weights for Conservative risk level
+            return [0, 0, 0, 7.44, 38.26, 30.51, 23.79, 0, 0, 0] # Optimized weights for Conservative risk level
         elif risk_level == "Moderate":
-            return [19.45, 0, 0, 0, 0, 0, 0, 0, 42.66, 37.89] # Optimized weights for Moderate risk level
+            return [0, 0, 0, 0, 42.66, 19.45, 37.89, 0, 0, 0] # Optimized weights for Moderate risk level
         else:
-            return [0, 0, 0, 0, 0, 0, 0, 0, 40, 60] # Optimized weights for Aggressive risk level
+            return [0, 0, 0, 0, 40, 0, 60, 0, 0, 0] # Optimized weights for Aggressive risk level
     
 
     weights = optimized_weights(risk_level)
