@@ -178,11 +178,11 @@ if username and all(a is not None for a in answers):
         Optimize portfolio weights based on risk level.
         """
         if risk_level == "Conservative":
-            return [30.51, 0, 0, 0, 0, 0, 7.44, 0, 38.26, 23.79]
+            return [30.51, 0, 0, 0, 0, 0, 7.44, 0, 38.26, 23.79] # Optimized weights for Conservative risk level
         elif risk_level == "Moderate":
-            return [19.45, 0, 0, 0, 0, 0, 0, 0, 42.66, 37.89]
+            return [19.45, 0, 0, 0, 0, 0, 0, 0, 42.66, 37.89] # Optimized weights for Moderate risk level
         else:
-            return [0, 0, 0, 0, 0, 0, 0, 0, 40, 60]
+            return [0, 0, 0, 0, 0, 0, 0, 0, 40, 60] # Optimized weights for Aggressive risk level
     
 
     weights = optimized_weights(risk_level)
