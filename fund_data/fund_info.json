@@ -48,11 +48,11 @@
     "risk_rating": 9
   },
   {
-    "name": "FIDELITY GLOBAL TECHNOLOGY A-ACC SGD",
+    "name": "JPMORGAN FUNDS - US TECHNOLOGY A(ACC) SGD",
     "type": "Equity",
-    "description": "Invests in global technology leaders, offering exposure to innovative sectors.",
-    "aum": "24.55B",
-    "sharpe_ratio": 0.40,
+    "description": "Invests in US technology leaders, offering exposure to innovative sectors.",
+    "aum": "7.83B",
+    "sharpe_ratio": 0.30,
     "risk_rating": 10
   },
   {

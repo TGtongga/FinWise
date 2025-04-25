@@ -6,6 +6,8 @@ import numpy as np
 import json
 import os
 from datetime import datetime, timedelta
+import cvxpy as cp
+from   scipy.optimize import minimize
 
 # Initialize the app
 apptitle = 'Risk Assessment & Portfolio Recommendation'
@@ -40,7 +42,10 @@ fund_data_dict = {}
 for fund in funds:
     file_path = os.path.join(data_folder, f"{fund}.csv")
     df = pd.read_csv(file_path)
-    df['NAV Date'] = pd.to_datetime(df['NAV Date'], format="%d %b %Y")
+    try:
+        df['NAV Date'] = pd.to_datetime(df['NAV Date'], format="%d %b %Y")
+    except:
+        df['NAV Date'] = pd.to_datetime(df['NAV Date'], format="%Y-%m-%d")
     df.sort_values(by='NAV Date', inplace=True)
     df = df[df['NAV Date'] >= datetime.today() - timedelta(days=365)]
     fund_data_dict[fund] = df
@@ -168,22 +173,19 @@ if username and all(a is not None for a in answers):
 
     selected_funds = funds[:10]
 
-    # This is a placeholder for the actual fund selection logic
-    np.random.seed(42)
-    def generate_weights():
-        w = np.random.randint(10, 40, size=len(selected_funds))
-        return np.round(w / w.sum() * 100, 1)
+    def optimized_weights(risk_level):
+        """
+        Optimize portfolio weights based on risk level.
+        """
+        if risk_level == "Conservative":
+            return [30.51, 0, 0, 0, 0, 0, 7.44, 0, 38.26, 23.79]
+        elif risk_level == "Moderate":
+            return [19.45, 0, 0, 0, 0, 0, 0, 0, 42.66, 37.89]
+        else:
+            return [0, 0, 0, 0, 0, 0, 0, 0, 40, 60]
+    
 
-    conservative_weights = generate_weights()
-    moderate_weights = generate_weights()
-    aggressive_weights = generate_weights()
-
-    if risk_level == "Conservative":
-        weights = conservative_weights
-    elif risk_level == "Moderate":
-        weights = moderate_weights
-    else:
-        weights = aggressive_weights
+    weights = optimized_weights(risk_level)
 
     st.markdown(f"""
         <div style="font-size: 1.5em; font-weight: bold;">
@@ -193,9 +195,12 @@ if username and all(a is not None for a in answers):
         </div>
     """, unsafe_allow_html=True)
 
+    filtered_funds = [f for f, w in zip(selected_funds, weights) if w > 0]
+    filtered_weights = [w for w in weights if w > 0]
+
     fig = go.Figure(data=[go.Pie(
-        labels=selected_funds,
-        values=weights,
+        labels=filtered_funds,
+        values=filtered_weights,
         hole=0.3,
         marker=dict(colors=px.colors.sequential.Plasma),
         hoverinfo="label+percent",
